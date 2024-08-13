@@ -1,0 +1,75 @@
+<footer id="footer" class="footer" [style.background-color]="footerBackgroundColor">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-3 col-md-6 footer-about">
+        <img [src]="logoSrc" width="200" alt="logo sb ieee" class="m-3"/>
+        <p>{{ aboutText }}</p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 footer-about">
+        <h3>Contact</h3>
+        <p class="mb-2"><i class="bi bi-pin-map me-3"></i><strong>Adresse: </strong>05 Ave Taha Hussein,</p>
+        <p> Tunis 1008 à l'ENSIT</p>
+        <p class="mb-2"><i class="bi bi-phone me-3"></i><strong>Phone: </strong>{{ footerPhone }}</p>
+        <a href="mailto:{{ footerEmail }}" class="mb-2 text-white"><i class="bi bi-envelope me-3"></i><strong>Email: </strong>{{ footerEmail }}</a>
+        <div class="social-links d-flex mt-4">
+            <a class="" [href]="footerinstagram" aria-label="instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a class="" [href]="footerFacebook" aria-label="facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a class="" [href]="footerYoutube" aria-label="youtube">
+                <i class="bi bi-youtube"></i>
+            </a>
+            <a class="" [href]="footerLinkedin" aria-label="linkedin">
+                <i class="bi bi-linkedin"></i>
+            </a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h3>Quick Links</h3>
+        <div class="row">
+          <div class="col-6">
+            <ul>
+              <li> <a href="/home">Home</a></li>
+              <li> <a href="/contact">Contact-Us</a></li>
+              <li> <a href="/gallery">Gallery</a></li>
+              <li> <a href="/join-us">Join-Us</a></li>
+              <li> <a href="/home/#teamHome">Team</a></li>
+              <li> <a href="/alumni-2024">Allmuni-2024</a></li>
+              <li> <a href="/alumni-2023">Allmuni-2023</a></li>
+              <li> <a href="/alumni-2022">Allmuni-2022</a></li>
+              <li> <a href="/alumni-2021">Allmuni-2021</a></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li> <a href="/home#chapterHome">Chapters</a></li>
+              <li> <a href="/home">SB</a></li>
+              <li> <a href="chapter/cs">CS</a></li>
+              <li> <a href="chapter/ras">RAS</a></li>
+              <li> <a href="chapter/ias">IAS</a></li>
+              <li> <a href="chapter/aess">AESS</a></li>
+              <li> <a href="chapter/pes">PES</a></li>
+              <li> <a href="chapter/wie">WIE</a></li>
+              <li> <a href="chapter/sight">SIGHT</a></li>
+            </ul>
+          </div>
+      </div>
+
+      </div>
+
+      <div class="col-lg-3 col-md-12 footer-localisation">
+        <h3>Localisation</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d629.4879921325812!2d10.179256687986872!3d36.784739211827876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd340576fc1a05%3A0x25fc1aa869f8cfb6!2s%C3%89cole%20nationale%20sup%C3%A9rieure%20d&#39;ing%C3%A9nieurs%20de%20Tunis%20(ENSIT)!5e0!3m2!1sen!2stn!4v1690723522488!5m2!1sen!2stn" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+  </div>
+  <div class="container copyright text-center mt-4">
+    <p>© <span>Copyright</span> <strong class="px-1 sitename">IEEE ENSIT</strong> <span>All Rights Reserved</span></p>
+  </div>
+</footer>

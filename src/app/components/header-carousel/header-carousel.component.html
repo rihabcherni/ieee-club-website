@@ -1,0 +1,99 @@
+  <!-- Carousel Start -->
+  <div class="container-fluid p-0 mb-5">
+    <div class="header-carousel position-relative">
+        <owl-carousel-o [options]="customOptions"  data-wow-delay="0.1s" class="owl-carousel-item position-relative">
+          <ng-container *ngFor="let slide of slides">
+            <ng-template carouselSlide [id]="slide.id">
+              <img class="img-fluid" [src]="slide.img" alt="">
+              <div class="position-absolute top-0 start-0 w-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                  <div class="container">
+                      <div class="row justify-content-start">
+                          <div class="col-10 col-lg-8">
+                              <h1 class="display-2 text-white animated slideInDown mb-4">{{ slide.tiltle }}</h1>
+                              <h2 class="text-white mb-4 pb-2">{{ slide.text }}</h2>
+                              <a href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">{{ slide.btn1 }}</a>
+                              <a href="" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">{{ slide.btn2 }}</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </ng-template>
+          </ng-container>
+
+        </owl-carousel-o>
+    </div>
+</div>
+<!-- Carousel End -->
+<!-- Portfolio Details Section -->
+
+    <!-- <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="ancien-img/portfolio/app-1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="ancien-img/portfolio/product-1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="ancien-img/portfolio/branding-1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="ancien-img/portfolio/books-1.jpg" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web design</li>
+                <li><strong>Client</strong>: ASU Company</li>
+                <li><strong>Project date</strong>: 01 March, 2020</li>
+                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
+              <p>
+                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>/Portfolio Details Section -->
